@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="fr" data-bs-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formation IA pour Actuaires - Esika</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/custom.css') }}">
+</head>
+<body>
+  <!-- Hero Section -->
+  <header class="hero-section text-center text-white">
+    <!-- Vidéo en arrière-plan -->
+    <video autoplay muted loop class="hero-video">
+      <source src="{{ url_for('static', filename='images/video.mp4') }}" type="video/mp4">
+      Votre navigateur ne supporte pas la lecture de vidéos.
+    </video>
+    <!-- Contenu de la section -->
+    <div class="container hero-content">
+      <img src="{{ url_for('static', filename='images/esika-logo.png') }}" alt="Esika Risk Management" class="brand-logo">
+      <h1 class="display-3 mb-4">Formation IA pour actuaires</h1>
+      <p class="lead mb-4">Maîtrisez l'Intelligence Artificielle appliquée aux travaux actuariels</p>
+      <button class="btn btn-lg cta-button typeform-trigger">S'inscrire maintenant</button>
+    </div>
+  </header>
+
+  <!-- Overview Section -->
+  <section class="section-padding bg-body">
+    <div class="container">
+      <h2 class="text-center mb-5">Informations sur la formation</h2>
+      <div class="row g-4 justify-content-center">
+        <!-- Objectifs -->
+        <div class="col-md-6">
+          <div class="text-center">
+            <i class="fas fa-bullseye feature-icon"></i>
+            <h3>Objectifs</h3>
+            <p class="fw-bold">
+              Cette formation vise à fournir aux actuaires les compétences nécessaires pour intégrer et exploiter l'IA  dans leurs pratiques professionnelles, tout en garantissant la qualité, la transparence et la pertinence des analyses réalisées.
+            </p>
+          </div>
+        </div>
+        <!-- Prérequis -->
+        <div class="col-md-6">
+          <div class="text-center">
+            <i class="fas fa-check-circle feature-icon"></i>
+            <h3>Prérequis</h3>
+            <p class="fw-bold">Se munir d'un ordinateur <br> Maîtriser la modélisation financière <br> Avoir des compétences en mathématiques et en statistiques</p>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section Intervenants -->
+  <section class="section-padding bg-body">
+    <div class="container">
+      <h2 class="text-center mb-5">Intervenants</h2>
+      <div class="row g-4 justify-content-center">
+        <!-- Carte Intervenant 1 -->
+        <div class="col-sm-6 col-md-4 col-lg-3">
+          <div class="card text-center h-100">
+            <img src="{{ url_for('static', filename='images/souleymane.jpg') }}" class="card-img-top" alt="Souleymane Bagayogo">
+            <div class="card-body">
+              <h5 class="card-title">Souleymane Bagayogo</h5>
+              <p class="card-text">Founder, Esika</p>
+              <p class="card-text"> Expert en actuairiat avec 8 années d'experiences</p>
+              <a href="https://www.linkedin.com/in/souleymane-bagayogo-95b9b491/" target="_blank" class="btn btn-primary">
+                <i class="fab fa-linkedin"></i> LinkedIn
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- Carte Intervenant 2 -->
+        <div class="col-sm-6 col-md-4 col-lg-3">
+          <div class="card text-center h-100">
+            <img src="{{ url_for('static', filename='images/julien.jpg') }}" class="card-img-top" alt="Julien Capgras">
+            <div class="card-body">
+              <h5 class="card-title">Julien Capgras</h5>
+              <p class="card-text">Founder, Data354</p>
+              <p class="card-text">Expert en transformation digitale avec 10 années d'experiences</p>
+              <a href="https://www.linkedin.com/in/juliencapgras/" target="_blank" class="btn btn-primary">
+                <i class="fab fa-linkedin"></i> LinkedIn
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- Carte Intervenant 3 -->
+        <div class="col-sm-6 col-md-4 col-lg-3">
+          <div class="card text-center h-100">
+            <img src="{{ url_for('static', filename='images/Leila.jpg') }}" class="card-img-top" alt="Leila Fofana">
+            <div class="card-body">
+              <h5 class="card-title">Leila Fofana</h5>
+              <p class="card-text">Consultante IA, Esika</p>
+              <p class="card-text">Expert en IA avec 2 années d'experiences </p>
+              <a href="https://www.linkedin.com/in/leila-makoko-fofana/" target="_blank" class="btn btn-primary">
+                <i class="fab fa-linkedin"></i> LinkedIn
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Programme Section -->
+  <section class="section-padding bg-body-tertiary">
+    <div class="container">
+      <h2 class="text-center mb-5">Programme de la Formation</h2>
+      <div class="row">
+        <div class="col-lg-8 mx-auto">
+          <!-- Module 1 -->
+          <div class="program-item">
+            <h4>1. Introduction à l'Intelligence Artificielle</h4>
+            <p><strong>Objectifs :</strong></p>
+            <ul>
+              <li>Comprendre les fondamentaux de l'IA (machine learning, deep learning, IA générative)</li>
+              <li>Contextualiser l'évolution historique et l'impact dans l'industrie financière</li>
+              <li>Sensibiliser aux enjeux de confidentialité et d'éthique</li>
+            </ul>
+            <p><strong>Contenu :</strong></p>
+            <ul>
+              <li>Définitions et concepts essentiels</li>
+              <li>Aperçu historique des évolutions en IA</li>
+              <li>Spécificités et applications pour les actuaires</li>
+            </ul>
+          </div>
+          <!-- Module 2 -->
+          <div class="program-item">
+            <h4>2. Automatisation du Traitement des Données</h4>
+            <p><strong>Objectifs :</strong></p>
+            <ul>
+              <li>Explorer les méthodes d'automatisation du traitement des données</li>
+              <li>Montrer comment l'IA réduit les erreurs humaines et booste la productivité</li>
+            </ul>
+            <p><strong>Contenu :</strong></p>
+            <ul>
+              <li>Principes et étapes du processus ETL (collecte, nettoyage, transformation, chargement)</li>
+              <li>Techniques IA pour préparation des données de qualité</li>
+              <li>Démonstration en direct avec ChatGPT appliqué à un cas de données financières</li>
+            </ul>
+          </div>
+          <!-- Module 3 -->
+          <div class="program-item">
+            <h4>3. Analyse des Données avec l'IA</h4>
+            <p><strong>Objectifs :</strong></p>
+            <ul>
+              <li>Illustrer l'utilisation de l'IA générative pour transformer des données complexes en insights actionnables</li>
+              <li>Soutenir la prise de décisions d'investissement et la gestion des risques</li>
+            </ul>
+            <p><strong>Contenu :</strong></p>
+            <ul>
+              <li>Présentation des modèles génératifs (ex. ChatGPT) pour automatiser rapports, CV et prévision</li>
+              <li>Application de la modélisation prédictive pour optimiser les stratégies d'investissement</li>
+              <li>Cas pratique : Élaboration d'une stratégie d'investissement basée sur l'analyse de tendances</li>
+            </ul>
+          </div>
+          <!-- Module 4 -->
+          <div class="program-item">
+            <h4>4. Documentation des Modèles Complexes</h4>
+            <p><strong>Objectifs :</strong></p>
+            <ul>
+              <li>Mettre en avant l'importance de documenter de manière transparente les processus et modèles actuariels</li>
+              <li>Illustrer comment l'automatisation peut accélérer la documentation et réduire les erreurs</li>
+            </ul>
+            <p><strong>Contenu :</strong></p>
+            <ul>
+              <li>Principes de documentation : explication détaillée du fonctionnement, des paramètres, des performances et des cas d'utilisation</li>
+              <li>Solutions d'automatisation : outils intégrés extrayant automatiquement les informations techniques</li>
+              <li>Cas pratique : démonstration d'un outil générant automatiquement la documentation d'un modèle d'IA</li>
+            </ul>
+          </div>
+          <!-- Module 5 -->
+          <div class="program-item">
+            <h4>5. Automatisation de la Production de Rapports d'Analyse</h4>
+            <p><strong>Objectifs :</strong></p>
+            <ul>
+              <li>Démontrer comment l'IA peut simplifier la création de rapports d'analyse</li>
+              <li>Réduire les délais et les erreurs grâce à l'automatisation</li>
+            </ul>
+            <p><strong>Contenu :</strong></p>
+            <ul>
+              <li>Processus de génération automatique des rapports</li>
+              <li>Exemples concrets de production de rapports détaillés et en temps réel</li>
+              <li>Impact sur l'efficacité des processus décisionnels et la gestion des risques</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Informations Pratiques -->
+  <section class="section-padding bg-body">
+    <div class="container">
+      <h2 class="text-center mb-5">Informations Pratiques</h2>
+      <div class="row g-4">
+        <!-- Date, Durée, Lieu -->
+        <div class="col-md-4">
+          <div class="text-center">
+            <i class="fas fa-calendar feature-icon"></i>
+            <h4>Date</h4>
+            <p>Le Jeudi 03 Avril 2025</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="text-center">
+            <i class="fas fa-clock feature-icon"></i>
+            <h4>Durée</h4>
+            <p>8 heures</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="text-center">
+            <i class="fas fa-map-marker-alt feature-icon"></i>
+            <h4>Lieu</h4>
+            <p>Abidjan - Hotel TIAMA</p>
+          </div>
+        </div>
+      </div>
+      <div class="row g-4 mt-4">
+        <!-- Places, Tarif -->
+        <div class="col-md-6">
+          <div class="text-center">
+            <i class="fas fa-users feature-icon"></i>
+            <h4>Places</h4>
+            <p>20 participants max.</p>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="text-center">
+            <i class="fas fa-tag feature-icon"></i>
+            <h4>Tarif</h4>
+            <p>300 000 FCFA</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="section-padding bg-body-tertiary">
+    <div class="container text-center">
+      <h2 class="mb-4">Prêt à vous former ?</h2>
+      <p class="lead mb-4">Inscrivez-vous dès maintenant pour réserver votre place</p>
+      <button class="btn btn-info btn-lg cta-button typeform-trigger">S'inscrire à la formation</button>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer-section text-white">
+    <div class="container text-center py-4">
+      <div class="row align-items-center">
+        <div class="col-md-12">
+          <h4 class="mb-3">Contactez-nous pour plus d'informations</h4>
+        </div>
+        <div class="col-md-6 contact-box">
+          <i class="fas fa-envelope contact-icon"></i>
+          <span>Email <br> </span>
+          <a href="mailto:lfofana@esika.fr" class="contact-link">  &nbsp;:&nbsp; Lfofana@esika.fr</a>
+        </div>
+        <div class="col-md-6 contact-box">
+          <i class="fas fa-envelope contact-icon"></i>
+          <span>Email <br> </span>
+          <a href="mailto:jellone@esika.fr" class="contact-link">  &nbsp;:&nbsp; Jello@esika.fr</a>
+        </div>
+        <div class="col-md-6 contact-box">
+          <i class="fas fa-phone contact-icon"></i>
+          <span>Téléphone <br></span>
+          <a href="tel:+2250554706474" class="contact-link">  &nbsp;:&nbsp; +225 05 54 70 64 74</a>
+        </div>
+        <div class="col-md-6 contact-box">
+          <i class="fas fa-phone contact-icon"></i>
+          <span>Téléphone <br> </span>
+          <a href="tel:+2250787436387" class="contact-link">  &nbsp;:&nbsp; +225 07 87 43 63 87</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>
